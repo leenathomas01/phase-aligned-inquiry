@@ -37,7 +37,7 @@ The case study exists only to show that PACI works under real epistemic pressure
 The protocol is the primary contribution. Everything else in this repository exists to demonstrate, support, or contextualize it.
 
 ### `/methodology` — The Core Contribution
-* **PACI Protocol ← Start here**
+* **[PACI Protocol](https://github.com/leenathomas01/phase-aligned-inquiry/blob/main/methodology/01-paci-protocol.md) ← Start here**
 * Role architecture details
 * Sequence discipline framework
 * Usage guidelines and preconditions
