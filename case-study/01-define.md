@@ -48,7 +48,7 @@ The HQG hypothesis explores whether spacetime geometry (gravity) is not a fundam
 
 ---
 
-**Status:** This hypothesis was moved to Phase 2 (Constrain) on [Date].
+**Status:** This hypothesis was moved to Phase 2 (Constrain) on [January 2026].
 
 **Note:** Per PACI Protocol, these definitions are locked. Any changes to the math or definitions hereafter constitute a new hypothesis.
 
