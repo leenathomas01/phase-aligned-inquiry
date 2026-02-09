@@ -1,7 +1,7 @@
 # Phase 1: Define
 
 **Date Locked:** January 2026  
-**Phase Lead:** Ontologist (Thea)  
+**Phase Lead:** Ontologist (Thea/ ChatGPT 5.2)  
 **Status:** Completed and locked before Constrain phase began
 
 This document contains the original Define phase artifact from the HQG PACI execution. It represents the formal hypothesis statement, technical definitions, and observables as they were locked before any simulation code was written or constraints were designed.
