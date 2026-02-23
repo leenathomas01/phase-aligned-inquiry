@@ -105,6 +105,17 @@ If you use or adapt PACI in your research, please cite:
 
 This is a living repository. The core protocol (v1.0) is stable. Supporting documentation and additional case studies will be added over time.
 
+---
+## Related Work
 
+**For a complete catalog of related research:**  
+📂 [Research Index](https://github.com/leenathomas01/research-index)
+
+**Thematically related:**
+- [PARP](https://github.com/leenathomas01/Power-Asymmetry-Restraint-Protocol-PARP) — Governance under opacity
+- [Embodied Agent Governance](https://github.com/leenathomas01/embodied-agent-governance) — External failure knowledge for agents
+- [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) — Why governance must precede autonomy
+
+---
 ---
 *PACI is not a guarantee of success. It is a guarantee of honesty.*
