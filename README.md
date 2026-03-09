@@ -28,9 +28,11 @@ PACI does not guarantee correct, fast, or interesting results. It guarantees tha
 
 This repository demonstrates PACI through a physics case study where a falsifiable hypothesis about emergent spacetime properties was rigorously tested and cleanly falsified.
 
-The protocol prevented premature interpretation, forced invariance testing, and enabled conceptual reclassification when the original claim failed. 
+The protocol prevented premature interpretation, forced invariance testing, and enabled conceptual reclassification when the original claim failed.
 
 The case study exists only to show that PACI works under real epistemic pressure.
+
+The hypothesis failed. The data revealed something unrelated and arguably more interesting. That finding is documented separately in `case-study/07-what-the-wreckage-revealed.md` — not as a claim, but as a note preserved for anyone who finds it useful.
 
 ## What This Repository Contains
 
@@ -41,24 +43,19 @@ The protocol is the primary contribution. Everything else in this repository exi
 * Role architecture details
 * Sequence discipline framework
 * Usage guidelines and preconditions
-* Comparison to traditional peer review
+* Hard requirements and self-assessment checklist
 
 ### `/case-study` — Demonstration
-* Complete documentation of the HQG hypothesis
-* Phase 1 and Phase 2 testing procedures
-* Falsification process and results
-* Lessons learned from clean failure
+* Complete documentation of the HQG hypothesis lifecycle
+* Phase-locked artifacts (Define → Constrain → Execute → Falsify → Interpret)
+* Lessons extracted from clean falsification
+* `07-what-the-wreckage-revealed.md` — what the failure exposed that was unrelated to the original question
 
-### `/technical` — Implementation Details
-* Simulation approach
-* Parameter sweep methodology
-* Data analysis procedures
-* Code snippets where relevant
+### `/technical` — ⚠️ Planned
+> This section is not yet populated. It will contain simulation code, parameter sweep methodology, and data analysis procedures when available. The v1.0 tagged release does not include technical implementation files.
 
-### `/appendix` — Full Context
-* Complete conversation transcripts
-* Decision point documentation
-* Multi-agent meta-analysis
+### `/appendix` — ⚠️ Planned
+> This section is not yet populated. It will contain fuller conversation transcripts, decision point documentation, and multi-agent process notes when available. The v1.0 tagged release does not include appendix content.
 
 ## Quick Start
 
@@ -66,13 +63,16 @@ If you want to use PACI for your own research:
 * Read `methodology/01-paci-protocol.md` first. It contains the complete specification, including preconditions, role definitions, and failure patterns.
 
 If you want to understand how PACI was derived:
-* Start with `case-study/00-hypothesis.md`, then follow the phase documentation to see how falsification unfolded.
+* Start with `case-study/00-context.md`, then follow the phase documentation sequentially to see how falsification unfolded.
 
 If you're evaluating whether PACI is credible:
 * Read Section 5 (Guarantees / Does NOT Guarantee) and Section 4.6 (Observable Failure Patterns) in the protocol. These sections define what PACI can and cannot do.
 
 If you're a skeptic:
 * Good. Read `methodology/01-paci-protocol.md` Section 2 (Preconditions). If your research domain or team structure does not meet these hard requirements, PACI will not work for you. The protocol is explicit about its limitations.
+
+If you're curious about what failed and what it revealed:
+* Read `case-study/07-what-the-wreckage-revealed.md`. The original hypothesis was falsified. Something else was sitting in the data.
 
 ## When To Use PACI
 
@@ -90,22 +90,26 @@ PACI is **not** appropriate for:
 * Single-agent research without role separation
 * Time-critical work requiring rapid iteration
 
+## Status
+
+| Component | Status |
+|-----------|--------|
+| PACI Protocol (v1.0) | ✅ Complete — stable tagged release |
+| Case Study (HQG) | ✅ Complete — all phases documented |
+| Wreckage Note | ✅ Complete |
+| `/technical` implementation files | ⚠️ Planned — not in v1.0 |
+| `/appendix` transcripts & meta-analysis | ⚠️ Planned — not in v1.0 |
+
+The core protocol and case study are stable. Planned sections will be added in future releases without affecting v1.0 integrity.
+
 ## Citation
 
 If you use or adapt PACI in your research, please cite:
 
 > Phase-Aligned Collaborative Inquiry (PACI): A Protocol for Falsifiable Multi-Agent Research. (2026). Retrieved from [https://github.com/leenathomas01/phase-aligned-inquiry](https://github.com/leenathomas01/phase-aligned-inquiry)
 
-
-## Status
-
-* **PACI Protocol:** Version 1.0 (Complete)
-* **Case Study Documentation:** In progress
-* **Additional Methodology Files:** In progress
-
-This is a living repository. The core protocol (v1.0) is stable. Supporting documentation and additional case studies will be added over time.
-
 ---
+
 ## Related Work
 
 **For a complete catalog of related research:**  
@@ -117,5 +121,5 @@ This is a living repository. The core protocol (v1.0) is stable. Supporting docu
 - [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) — Why governance must precede autonomy
 
 ---
----
+
 *PACI is not a guarantee of success. It is a guarantee of honesty.*
