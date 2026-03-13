@@ -16,7 +16,16 @@ These failure modes persist because single-agent or role-conflated systems lack 
 
 ## The Solution: Phase-Aligned Collaborative Inquiry (PACI)
 
-PACI is a research methodology that prevents these structural failures through:
+PACI is a research methodology that prevents structural failures through
+role separation, sequence enforcement, and pre-commitment to failure criteria.
+
+The PACI workflow separates inquiry into five strictly ordered phases.
+
+![PACI Protocol](methodology/diagrams/paci-phase-alignment-protocol.png)
+
+*Figure: Phase-Aligned Collaborative Inquiry protocol structure showing
+role separation and one-way phase enforcement.*
+
 
 1.  **Role separation:** Generation, constraint, execution, falsification, and interpretation are performed by functionally distinct components. No single participant both produces and validates results.
 2.  **Sequence enforcement:** Each phase must complete before the next begins. Later phases cannot contaminate earlier ones. Violations are detected and corrected immediately.
