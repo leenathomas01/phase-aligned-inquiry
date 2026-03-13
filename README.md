@@ -21,7 +21,7 @@ role separation, sequence enforcement, and pre-commitment to failure criteria.
 
 The PACI workflow separates inquiry into five strictly ordered phases.
 
-![PACI Protocol](.methodology/diagrams/paci-phase-alignment-protocol.png)
+![PACI Protocol](./diagrams/paci-phase-alignment-protocol.png)
 
 *Figure: Phase-Aligned Collaborative Inquiry protocol structure showing
 role separation and one-way phase enforcement.*
