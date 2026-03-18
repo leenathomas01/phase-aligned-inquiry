@@ -28,10 +28,16 @@ role separation and one-way phase enforcement.*
 
 
 1.  **Role separation:** Generation, constraint, execution, falsification, and interpretation are performed by functionally distinct components. No single participant both produces and validates results.
-2.  **Sequence enforcement:** Each phase must complete before the next begins. Later phases cannot contaminate earlier ones. Violations are detected and corrected immediately.
+2.  **Sequence enforcement:** Each phase must complete before the next begins. Later phases cannot contaminate earlier ones. Violations invalidate downstream phases and require restart from the last uncontaminated phase.
 3.  **Pre-commitment to failure criteria:** Success and failure conditions are defined explicitly before data exists, preventing retroactive redefinition of observables.
 
 PACI does not guarantee correct, fast, or interesting results. It guarantees that when hypotheses fail, they fail cleanly and informatively, with complete documentation of where and why failure occurred.
+
+In practice, PACI prevents:
+* Defining success after seeing results
+* Interpreting data during execution
+* Validating outcomes with the same component that generated them
+* Quietly redefining thresholds after data exists
 
 ## The Case Study
 
@@ -41,7 +47,7 @@ The protocol prevented premature interpretation, forced invariance testing, and 
 
 The case study exists only to show that PACI works under real epistemic pressure.
 
-The hypothesis failed. The data revealed something unrelated and arguably more interesting. That finding is documented separately in `case-study/07-what-the-wreckage-revealed.md` — not as a claim, but as a note preserved for anyone who finds it useful.
+The hypothesis failed. The data revealed patterns unrelated to the original claim. These are documented separately in `case-study/07-what-the-wreckage-revealed.md` — not as conclusions, but as preserved observations.
 
 ## What This Repository Contains
 
@@ -103,13 +109,25 @@ PACI is **not** appropriate for:
 
 | Component | Status |
 |-----------|--------|
-| PACI Protocol (v1.0) | ✅ Complete — stable tagged release |
+| PACI Protocol (v1.1) | ✅ Complete — structural integrity update |
 | Case Study (HQG) | ✅ Complete — all phases documented |
 | Wreckage Note | ✅ Complete |
-| `/technical` implementation files | ⚠️ Planned — not in v1.0 |
-| `/appendix` transcripts & meta-analysis | ⚠️ Planned — not in v1.0 |
+| `/technical` implementation files | ⚠️ Planned — not in current release |
+| `/appendix` transcripts & meta-analysis | ⚠️ Planned — not in current release |
 
-The core protocol and case study are stable. Planned sections will be added in future releases without affecting v1.0 integrity.
+The core protocol and case study are stable. Planned sections will be added in future releases without affecting protocol integrity.
+
+## Version
+
+**PACI v1.1 — Structural Integrity Update** (March 2026)
+
+Changes from v1.0:
+* Explicit enforcement rules for phase violations (Section 6)
+* Defined INVALID vs INCONCLUSIVE outcome distinction
+* Formalized allowed and prohibited rollback paths
+* Introduced Temporal Innocence as a named core principle
+* Clarified falsification scope constraints
+* Annotated case study to align with updated enforcement vocabulary
 
 ## Citation
 
