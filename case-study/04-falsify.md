@@ -7,6 +7,14 @@
 
 ---
 
+> **[v1.1 Annotation — March 2026]**
+>
+> The Constrain phase specified a stability criterion requiring correlation >10% amplitude for t >100 timesteps. The Execute phase ran simulations to t\_max = 50. Under the enforcement rules formalized in PACI v1.1 (Section 6.2), this constitutes an **INVALID** condition for that criterion — execution did not produce data sufficient to evaluate it — rather than INCONCLUSIVE.
+>
+> The original v1.0 classification (INCONCLUSIVE) is preserved below as the archival record. The v1.0 team handled this gap honestly; v1.1 now provides the formal vocabulary for the distinction they were already respecting in practice.
+
+---
+
 ## Purpose of This Phase
 
 Apply the pre-committed falsification checklist from Constrain phase to the raw data produced in Execute phase. Determine whether each criterion passes, fails, or is inconclusive.
