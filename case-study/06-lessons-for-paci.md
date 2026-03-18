@@ -186,6 +186,16 @@ The Falsify phase did not argue that the hypothesis was wrong. It applied a chec
 
 **Why this matters:** This removes the need to convince anyone. The checklist either passed or failed. Argument is unnecessary.
 
+### Property 7: Non-graceful degradation
+
+PACI does not partially succeed.
+
+When phase boundaries are weakened — through time pressure, social dynamics, or implicit trust that "we're being careful enough" — the protocol does not produce slightly worse results. It produces results that are indistinguishable from biased inquiry.
+
+**Observable effect:** This case study maintained strict sequence discipline throughout. The protocol functioned. But the margin between functioning and collapsing is not gradual — it is a cliff. Relaxing any single phase boundary (e.g., allowing Execute to flag "interesting" patterns, or allowing Falsify to note "context" alongside verdicts) would have reintroduced the failure modes PACI exists to prevent.
+
+**Why this matters:** PACI is not robust to partial implementation. Teams cannot adopt "the spirit of PACI" without its structure. The structure *is* the contribution. Without it, what remains is standard research with extra steps.
+
 ---
 
 ## Why This Case Study Is Stronger Than a Theoretical Description
