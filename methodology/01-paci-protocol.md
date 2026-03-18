@@ -1,5 +1,5 @@
 # Phase-Aligned Collaborative Inquiry (PACI) Protocol
-**Version 1.0**
+**Version 1.1**
 
 ## 1. Purpose of PACI
 ### 1.1 The Problem
@@ -129,16 +129,89 @@ PACI's power comes from enforcing temporal order. Later phases cannot begin unti
 
 ---
 
-## 6. Operational Norms
-* **6.1 Nulls Are Informative, Not Failures:** A null result is a successful outcome of the protocol.
-* **6.2 Sequence Violations Are Fatal:** If violated, the process must restart from that phase.
-* **6.3 Roles Are Functional, Not Hierarchical:** Domain authority rests with roles, not status.
-* **6.4 Contradiction Is Productive:** Tension is held until data forces resolution.
-* **6.5 Individual Satisfaction Is Not Optimized:** Truth-seeking overrides validation.
+## 6. Protocol Enforcement
+
+PACI does not degrade gracefully. When its structural constraints are violated, it collapses into standard biased inquiry. The following rules are not guidelines — they define the conditions under which PACI results remain valid.
+
+### 6.1 Phase Violation Consequence
+
+If a later phase influences an earlier phase — whether through information leakage, retroactive editing, or implicit or explicit awareness of later-phase outcomes:
+
+* All outputs from the contaminated phase onward are invalid.
+* The process must restart from the last uncontaminated phase.
+* No partial salvage is permitted. Outputs that appear sound but were produced under contaminated conditions cannot be trusted.
+
+### 6.2 Execution Sufficiency Rule
+
+If the Execute phase does not produce data sufficient to evaluate a Constrain criterion:
+
+* The result for that criterion is **INVALID**, not inconclusive.
+* The process must return to Execute with corrected specifications before Falsify can assign a final verdict on that criterion.
+
+**INCONCLUSIVE** is reserved for cases where:
+* Data meets the specification defined in Constrain.
+* But the signal does not resolve the criterion (e.g., measurement is within noise floor).
+
+The distinction matters: INCONCLUSIVE means the test was run properly and the world did not cooperate. INVALID means the test was not run as specified.
+
+### 6.3 Allowed Phase Transitions
+
+**Forward (always permitted):**
+
+Define → Constrain → Execute → Falsify → Interpret
+
+**Rollback (permitted with explicit documentation):**
+
+* Execute → Constrain: When execution reveals that a specification is missing, ambiguous, or physically impossible to satisfy. The Constrain artifact must be amended with a timestamped note before Execute resumes.
+* Falsify → Execute: When collected data is insufficient to evaluate one or more checklist items. Execute must produce additional data to specification before Falsify resumes.
+
+**Rollback (never permitted):**
+
+* Falsify → Constrain: Criteria cannot change after data exists. If criteria are discovered to be flawed, this is documented as a limitation in Interpret — not corrected retroactively.
+* Interpret → any prior phase: Interpretation cannot trigger re-execution, re-falsification, or redefinition. If Interpret reveals that the entire inquiry was misconceived, the correct response is a new PACI cycle, not modification of the current one.
+
+### 6.4 Falsification Scope Constraint
+
+The Falsify phase may:
+* Extract measurements from Execute phase data.
+* Apply pre-committed criteria from the Constrain phase checklist.
+* Assign a verdict of **PASS**, **FAIL**, or **INVALID** to each checklist item.
+
+The Falsify phase may not:
+* Redefine thresholds or success criteria.
+* Introduce interpretations or alternative explanations.
+* Defend, soften, or contextualize outcomes.
+
+Falsify classifies. It does not explain.
+
+### 6.5 Interpretation Isolation
+
+The Interpret phase must not produce conclusions that preserve the original hypothesis in modified form. If the final interpretation can be restated as "a version of the original claim is still true," then falsification has not been respected.
+
+Interpret exists to extract meaning from failure — not to rescue what failed.
+
+### 6.6 Temporal Innocence
+
+Each phase artifact must be producible without knowledge of any future phase's outputs.
+
+If an artifact contains information, framing, or emphasis that could only arise from awareness of later results:
+* The artifact is contaminated.
+* All phases from that point onward are invalid.
+
+Temporal innocence is not a best practice. It is the structural property that makes PACI artifacts forensically verifiable.
 
 ---
 
-## 7. Minimal Example Flow (Abstract)
+## 7. Operational Norms
+* **7.1 Nulls Are Informative, Not Failures:** A null result is a successful outcome of the protocol.
+* **7.2 Sequence Violations Are Fatal:** Violations invalidate all downstream phases and require restart from the last uncontaminated phase.
+* **7.3 Roles Are Functional, Not Hierarchical:** Domain authority rests with roles, not status.
+* **7.4 Contradiction Is Productive:** Tension is held until data forces resolution.
+* **7.5 Individual Satisfaction Is Not Optimized:** Truth-seeking overrides validation.
+
+---
+
+## 8. Minimal Example Flow (Abstract)
 1.  **Define:** Lock terms for "Mechanism X" and "Pattern Y".
 2.  **Constrain:** Design a control where X is absent.
 3.  **Execute:** Run X-active and X-absent simulations; report raw data.
@@ -147,14 +220,14 @@ PACI's power comes from enforcing temporal order. Later phases cannot begin unti
 
 ---
 
-## 8. When to Use PACI / When NOT to Use It
-### 8.1 Use PACI When
+## 9. When to Use PACI / When NOT to Use It
+### 9.1 Use PACI When
 * Hypothesis is falsifiable.
 * Confirmation bias risk is high.
 * Adversarial testing is required.
 * Failure is an acceptable learning outcome.
 
-### 8.2 Do NOT Use PACI When
+### 9.2 Do NOT Use PACI When
 * Pure ideation or brainstorming.
 * Consensus-building is the primary goal.
 * Domain is unfalsifiable.
@@ -162,5 +235,5 @@ PACI's power comes from enforcing temporal order. Later phases cannot begin unti
 
 ---
 **End of Protocol**
-*Version 1.0 | January 2026*
+*Version 1.1 | March 2026*
 *PACI is not a guarantee of success. It is a guarantee of honesty.*
