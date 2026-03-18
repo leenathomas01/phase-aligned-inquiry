@@ -1,3 +1,5 @@
+![Version](https://img.shields.io/badge/version-v1.1-blue)
+
 # Phase-Aligned Inquiry
 
 Most collaborative research fails not because the ideas are wrong, but because the structure allows confirmation bias and premature interpretation to corrupt results.
