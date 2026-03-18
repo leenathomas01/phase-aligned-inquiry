@@ -1,5 +1,8 @@
 ![Version](https://img.shields.io/badge/version-v1.1-blue)
 
+**Latest Release:** v1.1 — Structural Integrity Update  
+Formalizes enforcement rules and failure semantics. See release notes for details.
+
 # Phase-Aligned Inquiry
 
 Most collaborative research fails not because the ideas are wrong, but because the structure allows confirmation bias and premature interpretation to corrupt results.
